@@ -5,6 +5,10 @@ body {
   margin: 0;
   padding: 0;
   transition: background-color 0.3s, color 0.3s;
+  background-image: url(images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Keeps the background fixed when scrolling */
 }
 
 header {
@@ -40,6 +44,7 @@ section {
   margin: 20px auto;
   border-radius: 5px;
   max-width: 800px;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for better readability */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -48,7 +53,7 @@ h2 {
 }
 
 h3 {
-  color: #555;
+  color:;
 }
 
 ul {
@@ -138,7 +143,7 @@ body.light-theme nav ul li a:hover {
 }
 
 body.light-theme section {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
 }
 
 body.light-theme ul li {
@@ -203,7 +208,7 @@ body.dark-theme nav ul li a:hover {
 }
 
 body.dark-theme section {
-  background: #444;
+  background: rgba(68, 68, 68, 0.8);
 }
 
 body.dark-theme ul li {
