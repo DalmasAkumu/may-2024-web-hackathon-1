@@ -43,7 +43,6 @@ nav ul li a {
   transition: background 0.3s;
 }
 
-
 section {
   padding: 20px;
   margin: 20px auto;
@@ -58,7 +57,7 @@ h2 {
 }
 
 h3 {
-  color:;
+  color: inherit;
 }
 
 ul {
@@ -120,6 +119,28 @@ footer .social-media a {
   text-decoration: none;
   border-radius: 5px;
   transition: background 0.3s;
+}
+
+/* Styling for #top and #bottom IDs */
+#bottom {
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for better readability */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#bottom a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+ #bottom a:hover {
+  color: #b32a00;
 }
 
 /* Light theme styles */
@@ -187,6 +208,18 @@ body.light-theme .download-resume:hover {
   background-color: #555;
 }
 
+body.light-theme #top, body.light-theme #bottom {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+body.light-theme #top a, body.light-theme #bottom a {
+  color: #007bff;
+}
+
+body.light-theme #top a:hover, body.light-theme #bottom a:hover {
+  color: #0056b3;
+}
+
 /* Dark theme styles */
 body.dark-theme {
   background-color: #333;
@@ -252,6 +285,18 @@ body.dark-theme .download-resume:hover {
   background-color: #444;
 }
 
+body.dark-theme #top, body.dark-theme #bottom {
+  background: rgba(68, 68, 68, 0.8);
+}
+
+body.dark-theme #top a, body.dark-theme #bottom a {
+  color: #4da3ff;
+}
+
+body.dark-theme #top a:hover, body.dark-theme #bottom a:hover {
+  color: #1a73e8;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   nav ul li {
@@ -276,6 +321,11 @@ body.dark-theme .download-resume:hover {
   form label, form input, form textarea, form button {
       width: 100%;
       margin: 5px 0;
+  }
+
+   #bottom {
+    padding: 15px;
+    margin: 15px;
   }
 }
 
@@ -303,5 +353,10 @@ body.dark-theme .download-resume:hover {
 
   button {
       padding: 8px;
+  }
+
+   #bottom {
+    padding: 10px;
+    margin: 10px;
   }
 }
