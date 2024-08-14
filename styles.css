@@ -360,3 +360,13 @@ body.dark-theme #top a:hover, body.dark-theme #bottom a:hover {
     margin: 10px;
   }
 }
+
+
+.portfolio-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
